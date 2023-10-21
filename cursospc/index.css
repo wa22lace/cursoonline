@@ -78,6 +78,11 @@ img{
 .grade-itens::-webkit-scrollbar{
    display: none;
 }
+@media(max-width:500px){
+    .grade-itens{
+        width: 100%;
+    }
+}
 .saude{
     background-color: rgb(140, 133, 255);
     border-radius: 5px;
