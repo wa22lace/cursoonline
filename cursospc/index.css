@@ -1,5 +1,10 @@
 body{
     background-color: rgb(20, 69, 231);
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    width:100%;
+    height:100%
 }
 .header{
     display: flex;
@@ -29,7 +34,7 @@ input{
     min-width:300px;
     background-color: rgb(178, 178, 168);
     flex-wrap: wrap;
-    max-height: 50px;
+    max-height: 40px;
 
     }
 }
@@ -46,7 +51,6 @@ input{
     min-height: 100%;
     background-color: #fff;
     background-color: rgb(20, 69, 231);
-
 }
 .foto-promocao{
     min-height: 15rem;
@@ -59,14 +63,8 @@ img{
 @media(max-width:700px){
     .foto-promocao{
         img: src="img.png";
-        srcset
-        im
     }
 }
-
-
-
-
 .grade-itens{
     width: 70%;
     display: flex;
@@ -120,12 +118,9 @@ img{
 
 }
 
-@media(max-width:380px){
+@media(max-width:540px){
     .grade-itens{
-    
-        width: 100%;
-   
-    
+        width: 95%;
     }
     .saude{
         padding: 0%;
@@ -151,7 +146,7 @@ img{
 }
 .texto1{
     background-color: rgb(20, 69, 231);
-    color: black;
+    color: white;
     padding: 10px;
     text-align: start;
     font-size: 15px;
@@ -171,44 +166,55 @@ img{
     padding-top: 5px;
     
 }
-@media(min-width:850px){
+@media(min-width:700px){
     .menu-produtos{
         max-width:75%;
         margin: auto;
     }
+    .menu-produtos-ultimo{
+        max-width:75%;
+        justify-content:space-between;
+        margin:auto;
+        
+    }
+    .menu-produtos-ultimo::-webkit-scrollbar{
+        display:none;
+    }
+
 }
 .menu-produtos::-webkit-scrollbar{
     display: none;
 }
-
 .produto1{
-    background-color: #fff;
+    background-color:rgb(118, 133, 255) ;
     margin-left: 1rem;
-    min-width: 100px;
-    margin-top: ;
-    height: 100%;
+    min-width:130px;
+    height:200px;
 }
 .produto2{
-    background-color: #fff;
+    background-color: rgb(140, 133, 255);
     
     margin-left: 1rem;
-    min-width: 100px;
+    min-width:130px;
+        height:200px;
     border-radius: 5px;
 
 }
 .produto3{
-    background-color: #fff;
+    background-color:rgb(140, 133, 255);
     
     margin-left: 1rem;
-    min-width: 100px;
+    min-width:130px;
+        height:200px;
     border-radius: 5px;
 
 }
 .produto4{
-    background-color: #fff;
+    background-color:rgb(140, 133, 255);
   
     margin-left: 1rem;
-    min-width: 100px;
+    min-width:130px;
+    height:200px;
     border-radius: 5px;
 
 
@@ -216,28 +222,32 @@ img{
 .produto5{
     background-color: rgb(140, 133, 255);
     margin-left: 1rem;
-    min-width: 100px;
+    min-width:130px;
+    height:200px;
     border-radius: 5px;
 
 }
 .produto6{
     background-color: rgb(140, 133, 255);
     margin-left: 1rem;
-    min-width: 100px;
+    min-width:130px;
+    height:200px;
     border-radius: 5px;
 
 }
 .produto7{
     background-color: rgb(140, 133, 255);
     margin-left: 1rem;
-    min-width: 100px;
+    min-width:130px;
+    height:200px;
     border-radius: 5px;
 
 }
 .produto8{
     background-color: red;
     margin-left: 1rem;
-    min-width: 100px;
+    min-width:130px;
+    height:200px;
     border-radius: 5px;
 
 
@@ -245,65 +255,61 @@ img{
 .produto9{
     background-color: red;
     margin-left: 1rem;
-    min-width: 100px;
+    min-width:130px;
+    height:200px;
     border-radius: 5px;
 
 
 }
-@media(max-width:300px){
+@media(max-width:540px){
+ 
+}
+
+
+.menu-produtos-ultimo div{
+    height:180px;
+    width:120px;
+    margin-top: 10px;
+
+  
+}
+.menu-produtos-ultimo{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    overflow-x: auto;
+
+}
+@media(max-width:540px){
     .menu-produtos{
-        height: 10rem;
+        height: 100%;
+        width:100%;
     }
-    .produto1{
-        width: 50px;
-        max-height: 260px;
+     .menu-produtos div{
+        min-width:130px;
+        height:200px;
+
     }
-    .produto2{
-       max-height: 200px;
-       background-color: rgb(140, 133, 255);
+    .menu-produtos-ultimo{
+        display:flex;
+        flex-wrap:wrap;
+        
+        justify-content:space-around;
+    }
+
+    .menu-produtos-ultimo div{
+        justify-content:space-around;
+        min-width:130px;
+        height:200px;
     
     }
-    .produto3{
-        max-height: 200px;
-        background-color: rgb(140, 133, 255);
-     
-     }
-     .produto4{
-        max-height: 200px;
-        background-color: rgb(140, 133, 255);
-     
-     }
-     .produto5{
-        max-height: 200px;
-
-        background-color: rgb(140, 133, 255);
-     
-     }
-     .produto6{
-        max-height: 200px;
-
-        background-color: rgb(140, 133, 255);
-     
-     }
-     .produto7{
-        max-height: 200px;
-
-        background-color: rgb(140, 133, 255);
-     
-     }
-     .produto8{
-        max-height: 200px;
-
-        background-color: rgb(140, 133, 255);
-     
-     }
-     .produto9{
-        max-height: 200px;
-
-        background-color: rgb(140, 133, 255);
-     
-     }
+    
 }
+
+
+
+
+
 
 .menu-produtos-div{
     
@@ -318,9 +324,11 @@ img{
     
 }
 footer{
-    background-color: green;
+    background-color: rgb(140, 133, 255);
     max-height: 100%;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
 
 }
