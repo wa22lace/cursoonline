@@ -24,10 +24,11 @@ body{
     background-color: yellow;
 }
 input{
-    max-height: 80%;
+    max-height: 70%;
     border-radius: 8px;
-    min-width: 100%;
+    min-width: 90%;
     padding: 8px;
+    margin-top:10px;
 }
 @media(min-width:500px){
     input{
@@ -76,9 +77,9 @@ img{
 .grade-itens::-webkit-scrollbar{
    display: none;
 }
-@media(max-width:500px){
+@media(max-width:598px){
     .grade-itens{
-        width: 100%;
+        width: 95%;
     }
 }
 .saude{
@@ -119,9 +120,7 @@ img{
 }
 
 @media(max-width:540px){
-    .grade-itens{
-        width: 95%;
-    }
+   
     .saude{
         padding: 0%;
         margin-left: 0.5rem;
@@ -244,41 +243,33 @@ img{
 
 }
 .produto8{
-    background-color: red;
+    background-color: rgb(140, 133, 255);
     margin-left: 1rem;
     min-width:130px;
     height:200px;
     border-radius: 5px;
-
-
 }
 .produto9{
-    background-color: red;
+    background-color: rgb(140, 133, 255);
     margin-left: 1rem;
     min-width:130px;
     height:200px;
     border-radius: 5px;
-
-
 }
 @media(max-width:540px){
  
 }
 
-
 .menu-produtos-ultimo div{
     height:180px;
     width:120px;
     margin-top: 10px;
-
-  
 }
 .menu-produtos-ultimo{
     display:flex;
     width:100%;
     justify-content:space-between;
     overflow-x: auto;
-
 }
 @media(max-width:540px){
     .menu-produtos{
@@ -301,9 +292,16 @@ img{
         justify-content:space-around;
         min-width:130px;
         height:200px;
-    
     }
     
+}
+@media(max-width:437px){
+        .produto9{
+            display:none;
+        }
+}
+.menu-produtos-ultimo::-webkit-scrollbar{
+    display:none;
 }
 
 
