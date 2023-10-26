@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="cssteste.css">
+
     <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
     
    <header class="header">
-
-        
         <div class="logo">
-            <img src="logo-mobile.png" alt="logo">
+            <img src="foto/logo-mobile.png" alt="logo">
         
         </div>
     
@@ -23,15 +24,11 @@
         </div>
              -->
    </header>
-
-
     <div class="menu">
         
         <div class="foto-promocao">
-            <img class="imagen-foto" src="foto1.png" alt="foto">
+            <img class="imagen-foto" src="foto/foto1.png" alt="foto">
         </div>
-
-        
 
         <div class="grade-itens">
             <div class="saude">Saude</div>
@@ -46,9 +43,23 @@
         </div>
     
     
-       <div class="menu-produtos">
-        <div class="produto1">produto1</div>
-        <div class="produto2">produto2</div>
+       <div id="menu-produtos">
+        <div id="botao-esquerda" onclick="direcao(1)">
+            <
+        </div>
+       
+        <div class="produto1">produto1
+            <img src="foto/fototeste.png" alt="foto-produto">
+        </div>
+
+        <div class="produto2">
+            <img src="foto/produto2.png" alt="foto-produto">
+
+            <li>
+                <a href="https://go.hotmart.com/G87240731C">Compra</a>
+            </li>
+        </div>
+
         <div class="produto3">produto3</div>
         <div class="produto4">produto4</div>
         <div class="produto5">produto5</div>
@@ -56,13 +67,21 @@
         <div class="produto7">produto7</div>
         <div class="produto8">produto8</div>
         <div class="produto9">produto9</div>
+
+        <div id="botao-direita" onclick="direcao(2)">
+            >
+        </div>
     
        </div>
+
        <h1 class="texto1">
         Aproveite as ofertas de Hoje
        </h1>
     
-       <div class="menu-produtos">
+       <div id="menu-produtos2">
+        <div id="botao-esquerda" onclick="segundadirecao(1)">
+            <
+        </div>
         <div class="produto1">produto1</div>
         <div class="produto2">produto2</div>
         <div class="produto3">produto3</div>
@@ -72,13 +91,20 @@
         <div class="produto7">produto7</div>
         <div class="produto8">produto8</div>
         <div class="produto9">produto9</div>
-    
+        <div id="botao-direita" onclick="segundadirecao(2)">
+            >
+        </div>
        </div>
+       
        <h1 class="texto1">
         Corra ainda da tempo
        </h1>
     
-       <div class="menu-produtos-ultimo">
+       <div id="menu-produtos-ultimo">
+        <div id="botao-esquerda" onclick="direcao1(1)">
+            <
+        </div>
+
         <div class="produto1">produto1</div>
         <div class="produto2">produto2</div>
         <div class="produto3">produto3</div>
@@ -88,12 +114,22 @@
         <div class="produto7">produto7</div>
         <div class="produto8">produto8</div>
         <div class="produto9">produto9</div>
+
+        <div id="botao-direita" onclick="direcao1(2)">
+            >
+        </div>
+    
     
        </div>
     <h1 class="texto1">
         Black Week 
     </h1>
-       <div class="menu-produtos-ultimo">
+       <div id="menu-produtos-ultimo2">
+
+        <div id="botao-esquerda" onclick="direcao3(1)">
+            <
+        </div>
+
         <div class="produto1">produto1</div>
         <div class="produto2">produto2</div>
         <div class="produto3">produto3</div>
@@ -104,6 +140,9 @@
         <div class="produto8">produto8</div>
         <div class="produto9">produto9</div>
     
+        <div id="botao-direita" onclick="direcao3(2)">
+            >
+        </div>
        </div>
     </div>
    
@@ -121,6 +160,7 @@
 
 
 </body>
+<script type="text/javascript" src="index.js"></script>
 
 
 </html>
