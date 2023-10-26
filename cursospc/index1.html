@@ -1,166 +1,344 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="cssteste.css">
+body{
+    background-color: rgb(20, 69, 231);
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    width:100%;
+    height:100%
+}
+.header{
+    display: flex;
+    justify-content: space-around;/*space-between*/ 
+    text-align: center;
+    flex-wrap: wrap;
+}
+.logo{
+}
+@media(max-width:300px){
+    .logo{
+        inset: img;
+    }
+}
+.href-cursos{
+    background-color: yellow;
+}
+input{
+    max-height: 70%;
+    border-radius: 8px;
+    min-width: 90%;
+    padding: 8px;
+    margin-top:10px;
+}
+@media(min-width:500px){
+    input{
+    min-width:300px;
+    background-color: rgb(178, 178, 168);
+    flex-wrap: wrap;
+    max-height: 40px;
 
-    <link rel="stylesheet" href="index.css">
-
-</head>
-<body>
+    }
+}
+@media(max-width:500px){
+    .href-cursos{
+        display: none;
+        background-color: red;
+    }
+}
+.menu{
+   /* width: 100%;
+    height: 200px;  */
+    max-width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    background-color: rgb(20, 69, 231);
+}
+.foto-promocao{
+    min-height: 15rem;
+    text-align: center;
     
-   <header class="header">
-        <div class="logo">
-            <img src="foto/logo-mobile.png" alt="logo">
-        
-        </div>
-    
-        <input type="search" value="Pesquisa" class="Pesquisa">
-        <!--
-        <div class="href-cursos">
-        <a href="">cursos</a>
-        </div>
-             -->
-   </header>
-    <div class="menu">
-        
-        <div class="foto-promocao">
-            <img class="imagen-foto" src="foto/foto1.png" alt="foto">
-        </div>
+}
+img{
+    max-width: 100%;
+}
+@media(max-width:700px){
+    .foto-promocao{
+        img: src="img.png";
+    }
+}
+.grade-itens{
+    width: 70%;
+    display: flex;
+    overflow-x: auto;
+    margin: auto;
+    justify-content: space-between;
 
-        <div class="grade-itens">
-            <div class="saude">Saude</div>
-            <div class="receitas">Receitas</div>
-            <div class="exercícios">Exercícios </div>
-            <div class="alimentacao">Alimentacao</div>
-            <div class="confeiteiro">Confeiteiro</div>
-        </div>
-    
-        <div class="texto1">
-            <h1 class="texto1">BLACK FRIDER </h1>
-        </div>
-    
-    
-       <div id="menu-produtos">
-        <div id="botao-esquerda" onclick="direcao(1)">
-            <
-        </div>
-       
-        <div class="produto1">produto1
-            <img src="foto/fototeste.png" alt="foto-produto">
-        </div>
+}
+.grade-itens::-webkit-scrollbar{
+   display: none;
+}
+@media(max-width:598px){
+    .grade-itens{
+        width: 95%;
+    }
+}
+.saude{
+    background-color: rgb(140, 133, 255);
+    border-radius: 5px;
+    padding: 0.5%;
+    text-align: center;
+    margin-left: 1rem;
+}
+.receitas{
+    background-color: rgb(140, 133, 255);
+    border-radius: 5px;
+    padding: 0.3%;
+    text-align: center;
+    margin-left: 1rem;
+}
+.alimentacao{
+    background-color: rgb(140, 133, 255);
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    margin-left: 1rem;
+}
+.exercícios{
+    background-color: rgb(140, 133, 255);
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    margin-left: 1rem;
+}
+.confeiteiro{
+    background-color: rgb(140, 133, 255);
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    margin-left: 1rem;
 
-        <div class="produto2">
-            <img src="foto/produto2.png" alt="foto-produto">
+}
 
-            <li>
-                <a href="https://go.hotmart.com/G87240731C">Compra</a>
-            </li>
-        </div>
-
-        <div class="produto3">produto3</div>
-        <div class="produto4">produto4</div>
-        <div class="produto5">produto5</div>
-        <div class="produto6">produto6</div>
-        <div class="produto7">produto7</div>
-        <div class="produto8">produto8</div>
-        <div class="produto9">produto9</div>
-
-        <div id="botao-direita" onclick="direcao(2)">
-            >
-        </div>
-    
-       </div>
-
-       <h1 class="texto1">
-        Aproveite as ofertas de Hoje
-       </h1>
-    
-       <div id="menu-produtos2">
-        <div id="botao-esquerda" onclick="segundadirecao(1)">
-            <
-        </div>
-        <div class="produto1">produto1</div>
-        <div class="produto2">produto2</div>
-        <div class="produto3">produto3</div>
-        <div class="produto4">produto4</div>
-        <div class="produto5">produto5</div>
-        <div class="produto6">produto6</div>
-        <div class="produto7">produto7</div>
-        <div class="produto8">produto8</div>
-        <div class="produto9">produto9</div>
-        <div id="botao-direita" onclick="segundadirecao(2)">
-            >
-        </div>
-       </div>
-       
-       <h1 class="texto1">
-        Corra ainda da tempo
-       </h1>
-    
-       <div id="menu-produtos-ultimo">
-        <div id="botao-esquerda" onclick="direcao1(1)">
-            <
-        </div>
-
-        <div class="produto1">produto1</div>
-        <div class="produto2">produto2</div>
-        <div class="produto3">produto3</div>
-        <div class="produto4">produto4</div>
-        <div class="produto5">produto5</div>
-        <div class="produto6">produto6</div>
-        <div class="produto7">produto7</div>
-        <div class="produto8">produto8</div>
-        <div class="produto9">produto9</div>
-
-        <div id="botao-direita" onclick="direcao1(2)">
-            >
-        </div>
-    
-    
-       </div>
-    <h1 class="texto1">
-        Black Week 
-    </h1>
-       <div id="menu-produtos-ultimo2">
-
-        <div id="botao-esquerda" onclick="direcao3(1)">
-            <
-        </div>
-
-        <div class="produto1">produto1</div>
-        <div class="produto2">produto2</div>
-        <div class="produto3">produto3</div>
-        <div class="produto4">produto4</div>
-        <div class="produto5">produto5</div>
-        <div class="produto6">produto6</div>
-        <div class="produto7">produto7</div>
-        <div class="produto8">produto8</div>
-        <div class="produto9">produto9</div>
-    
-        <div id="botao-direita" onclick="direcao3(2)">
-            >
-        </div>
-       </div>
-    </div>
+@media(max-width:540px){
    
+    .saude{
+        padding: 0%;
+        margin-left: 0.5rem;
+    }
+    .receitas{
+        padding: 0.3%;
+        margin-left: 0.5rem;
+    }
+    .alimentacao{
+        padding: 0%;
+        margin-left: 0.5rem;
+    }
+    .exercícios{
+        padding: 0%;
+        margin-left: 0.5rem;
+    }
+    .confeiteiro{
+        padding: 0%;
+        margin-left: 0.5rem;
+    
+    }
+}
+.texto1{
+    background-color: rgb(20, 69, 231);
+    color: white;
+    padding: 10px;
+    text-align: start;
+    font-size: 15px;
+}
 
-    <footer> 
-        Contatos:
-        <br>
-        (99) 98526-5037
-        <br>
-        Endereço Rua 11 215 imperatriz-MA
-        <br>
-        Cep 65905-330
-    </footer>
+#menu-produtos, #menu-produtos2, #menu-produtos-ultimo2{
+    width:100%;
+    height: 13rem;
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: rgb(20, 69, 231);
+    padding-top: 5px;
+    
+}
+@media(min-width:700px){
+    #menu-produtos, #menu-produtos2 ,#menu-produtos-ultimo2{
+        max-width:75%;
+        margin: auto;
+    }
+   
+    #menu-produtos-ultimo{
+        max-width:75%;
+        justify-content:space-between;
+        margin:auto;
+        
+    }
+    #menu-produtos-ultimo::-webkit-scrollbar{
+        display:none;
+    }
+
+}
+#menu-produtos::-webkit-scrollbar{
+    display: none;
+}
+.produto1{
+    background-color:rgb(118, 133, 255) ;
+    margin-left: 1rem;
+    min-width:130px;
+    height:200px;
+}
+.produto2{
+    background-color: rgb(140, 133, 255);
+    
+    margin-left: 1rem;
+    min-width:130px;
+        height:200px;
+    border-radius: 5px;
+
+}
+.produto3{
+    background-color:rgb(140, 133, 255);
+    
+    margin-left: 1rem;
+    min-width:130px;
+        height:200px;
+    border-radius: 5px;
+
+}
+.produto4{
+    background-color:rgb(140, 133, 255);
+  
+    margin-left: 1rem;
+    min-width:130px;
+    height:200px;
+    border-radius: 5px;
 
 
+}
+.produto5{
+    background-color: rgb(140, 133, 255);
+    margin-left: 1rem;
+    min-width:130px;
+    height:200px;
+    border-radius: 5px;
 
-</body>
-<script type="text/javascript" src="index.js"></script>
+}
+.produto6{
+    background-color: rgb(140, 133, 255);
+    margin-left: 1rem;
+    min-width:130px;
+    height:200px;
+    border-radius: 5px;
+
+}
+.produto7{
+    background-color: rgb(140, 133, 255);
+    margin-left: 1rem;
+    min-width:130px;
+    height:200px;
+    border-radius: 5px;
+
+}
+.produto8{
+    background-color: rgb(140, 133, 255);
+    margin-left: 1rem;
+    min-width:130px;
+    height:200px;
+    border-radius: 5px;
+}
+.produto9{
+    background-color: rgb(140, 133, 255);
+    margin-left: 1rem;
+    min-width:130px;
+    height:200px;
+    border-radius: 5px;
+}
+
+ /*
+#menu-produtos-ultimo div{
+    height:180px;
+    width:120px;
+    margin-top: 10px;
+}
+*/
+#menu-produtos-ultimo{
+    display:flex;
+    justify-content:space-between;
+    overflow-x: auto;
+}
+@media(max-width:540px){
+    #menu-produtos{
+        height: 100%;
+        width:100%;
+    }
+     #menu-produtos div{
+        /*min-width:130px; esse individo tava formatando todas as div com isso não dava para formata os botão dentro desse container*/
+        height:200px;
+    }
+    #menu-produtos-ultimo{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+    }
+
+    #menu-produtos-ultimo div{
+        justify-content:space-around;
+        /*min-width:130px;*/
+        height:200px;
+    }
+
+    #botao-esquerda , #botao-direita{
+        /*tag position:absolute; serve para deixar os itens colados na borda do navegador  
+        */
+        display: none;
+    }
+    /*#botao-direita{
+        height: 26%;
+        width: 50x;
+        right: 0;
+        line-height: 180px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        background: rgb(67, 47, 47);
+        z-index: 1;
+    }*/
+}
 
 
-</html>
+@media(max-width:437px){
+        .produto9{
+            display:none;
+        }
+}
+#menu-produtos-ultimo::-webkit-scrollbar{
+    display:none;
+}
+#menu-produtos2::-webkit-scrollbar{
+    display:none;
+}
+#menu-produtos-ultimo2::-webkit-scrollbar{
+    display: none;
+}
+.menu-produtos-div{
+    
+}
+.grade-itens-pedagogia{
+
+}
+.grade-itens-confeiteiro{
+
+}
+.grade-itens-receitas{
+    
+}
+footer{
+    background-color: rgb(140, 133, 255);
+    max-height: 100%;
+  
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+
+}
