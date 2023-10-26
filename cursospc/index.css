@@ -293,7 +293,7 @@ p{
     }
      #menu-produtos div{
         /*min-width:130px; esse individo tava formatando todas as div com isso não dava para formata os botão dentro desse container*/
-        height:200px;
+        
     }
     #menu-produtos-ultimo{
         display:flex;
