@@ -62,6 +62,10 @@ img{
         width: 95%;
     
     }
+    h1 {
+        text-align: center;
+        margin: auto;
+    }
     
 }
 @media(min-width:540px){
