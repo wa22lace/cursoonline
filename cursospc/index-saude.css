@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(20,69,231);
+
+}
+h1{
+    color: white;
+    font-size: 20px;
+
+}
+.menu{
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    flex-wrap: wrap;
+    height: 600px;
+    display: grid;
+    grid-column: 1fr 1fr fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
