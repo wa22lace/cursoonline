@@ -1,0 +1,302 @@
+body{
+    background-color: rgb(20, 69, 231);
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    width:100%;
+    height:100%
+}
+.header{
+    display: flex;
+    justify-content: space-around;/*space-between sever para deixar os itens colado na borda o around deixa eles centralizado */ 
+    text-align: center;
+    flex-wrap: wrap;
+}
+.logo{
+}
+@media(max-width:300px){
+    .logo{
+        inset: img;
+    }
+}
+.href-cursos{
+    background-color: yellow;
+}
+input{
+    max-height: 70%;
+    border-radius: 8px;
+    min-width: 90%;
+    padding: 8px;
+    margin-top:10px;
+}
+@media(min-width:500px){
+    input{
+    min-width:300px;
+    background-color: rgb(178, 178, 168);
+    flex-wrap: wrap;
+    max-height: 40px;
+
+    }
+}
+@media(max-width:500px){
+    .href-cursos{
+        display: none;
+        background-color: red;
+    }
+}
+.menu{
+   /* width: 100%;
+    height: 200px;  */
+    max-width: 100%;
+    min-height: 100%;
+    background-color: rgb(20, 69, 231);
+}
+.foto-promocao{
+    min-height: 15rem;
+    text-align: center;
+    
+}
+img{
+    max-width: 100%;
+}
+@media(max-width:700px){
+    .foto-promocao{
+        img: src="img.png";
+    }
+}
+.grade-itens{
+    width: 70%;
+    display: flex;
+    overflow-x: auto;
+    margin: auto;
+    justify-content: space-between;
+
+}
+.grade-itens::-webkit-scrollbar{
+   display: none;
+}
+@media(max-width:598px){
+    .grade-itens{
+        width: 95%;
+    }
+}
+.saude{
+    background-color: rgb(140, 133, 255);
+    border-radius: 5px;
+    padding: 0.5%;
+    text-align: center;
+    margin-left: 1rem;
+}
+.receitas{
+    background-color: rgb(140, 133, 255);
+    border-radius: 5px;
+    padding: 0.3%;
+    text-align: center;
+    margin-left: 1rem;
+}
+.alimentacao{
+    background-color: rgb(140, 133, 255);
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    margin-left: 1rem;
+}
+.exercícios{
+    background-color: rgb(140, 133, 255);
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    margin-left: 1rem;
+}
+.confeiteiro{
+    background-color: rgb(140, 133, 255);
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    margin-left: 1rem;
+
+}
+
+@media(max-width:540px){
+   
+    .saude{
+        padding: 0%;
+        margin-left: 0.5rem;
+    }
+    .receitas{
+        padding: 0.3%;
+        margin-left: 0.5rem;
+    }
+    .alimentacao{
+        padding: 0%;
+        margin-left: 0.5rem;
+    }
+    .exercícios{
+        padding: 0%;
+        margin-left: 0.5rem;
+    }
+    .confeiteiro{
+        padding: 0%;
+        margin-left: 0.5rem;
+    
+    }
+}
+li, a{
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    background: #aabedb;
+    padding: 3px;
+    border-radius: 10px;
+    width: 80px;
+    margin:auto;
+    
+}
+p{
+    margin: 0; /*serve para tirar o espacamento de cima que ela dar por conta da div o item acaba descendo um pouco*/
+    text-decoration: line-through;
+    font-size: 10px;
+}
+.price{
+    margin-left: 10px;
+    font-size: black;
+    font-size: 12px;
+}
+.texto1{
+    background-color: rgb(20, 69, 231);
+    color: white;
+    padding: 10px;
+    text-align: start;
+    font-size: 15px;
+}
+
+#menu-produtos, #menu-produtos2, #menu-produtos-ultimo2{
+    width:100%;
+    height: 14rem;
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: rgb(20, 69, 231);
+    padding-top: 5px;
+    
+}
+@media(min-width:700px){
+    #menu-produtos, #menu-produtos2 ,#menu-produtos-ultimo2{
+        max-width:75%;
+        margin: auto;
+    }
+   
+    #menu-produtos-ultimo{
+        max-width:75%;
+        justify-content:space-between;
+        margin:auto;
+        
+    }
+    #menu-produtos-ultimo::-webkit-scrollbar{
+        display:none;
+    }
+
+}
+#menu-produtos::-webkit-scrollbar{
+    display: none;
+}
+.produto1, .produto2, .produto3,  .produto4,  .produto5, .produto6, .produto7, .produto8, .produto9{
+    background-color:rgb(140, 133, 255);
+    margin-left: 1rem;
+    min-width:140px;
+    height:100%;
+    border-radius: 5px;
+}
+
+
+ /*
+#menu-produtos-ultimo div{
+    height:180px;
+    width:120px;
+    margin-top: 10px;
+}
+*/
+#menu-produtos-ultimo{
+    display:flex;
+    justify-content:space-between;
+    overflow-x: auto;
+}
+@media(max-width:540px){
+    #menu-produtos{
+        height: 100%;
+        width:100%;
+    }
+     #menu-produtos div{
+        /*min-width:130px; esse individo tava formatando todas as div com isso não dava para formata os botão dentro desse container*/
+    }
+    #menu-produtos-ultimo{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+    }
+
+    #menu-produtos-ultimo div{
+        justify-content:space-around;
+        /*min-width:130px;*/
+        width: 160px;
+        height:200px;
+        margin-top: 10px;
+
+    }
+
+    #botao-esquerda , #botao-direita{
+        /*tag position:absolute; serve para deixar os itens colados na borda do navegador  
+        */
+        display: none;
+    }
+    /*#botao-direita{
+        height: 26%;
+        width: 50x;
+        right: 0;
+        line-height: 180px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        background: rgb(67, 47, 47);
+        z-index: 1;
+    }*/
+}
+
+
+@media(max-width:527px){
+        .produto9{
+            display:none;
+        }
+}
+#menu-produtos-ultimo::-webkit-scrollbar{
+    display:none;
+}
+#menu-produtos2::-webkit-scrollbar{
+    display:none;
+}
+#menu-produtos-ultimo2::-webkit-scrollbar{
+    display: none;
+}
+.menu-produtos-div{
+    
+}
+.grade-itens-pedagogia{
+
+}
+.grade-itens-confeiteiro{
+
+}
+.grade-itens-receitas{
+    
+}
+footer{
+    background-color: rgb(140, 133, 255);
+    max-height: 100%;
+  
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+
+}
