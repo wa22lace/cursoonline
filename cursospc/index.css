@@ -240,7 +240,7 @@ p{
         justify-content:space-around;
         /*min-width:130px;*/
         width: 160px;
-        height:200px;
+        height:100%;
         margin-top: 10px;
 
     }
