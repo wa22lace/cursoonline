@@ -69,9 +69,13 @@ li, a{
 }
 .descricao{
     font-size: 12px;
+    margin-left: 5px;
 }
-#valor{
-    font-size: 15px;
+#valor {
+    font-size: 17px;
+    color: white;
+    display: flex;
+
 }
 p, .preco-cortado{
     margin: 0; /*serve para tirar o espacamento de cima que ela dar por conta da div o item acaba descendo um pouco*/
@@ -82,7 +86,12 @@ p, .preco-cortado{
     margin-left: 10px;
     font-size: 12px;
     font-size: white;
-
+    color: black;
+}
+.a-vista{
+    margin: 2px 5px 0px;
+    color: rgb(62, 193, 62);
+    font-size: 15px;
 }
 .texto1{
     background-color: rgb(20, 69, 231);
@@ -313,11 +322,6 @@ p, .preco-cortado{
 }
 #menu-produtos-ultimo2::-webkit-scrollbar{
     display: none;
-}
-#menu-produtos-ultimo2{
-    background: white;
-    display: flex;
-
 }
 
 footer{
