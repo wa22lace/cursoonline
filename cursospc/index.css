@@ -282,7 +282,9 @@ p, .preco-cortado{
         background: rgb(67, 47, 47);
         z-index: 1;
     }*/
-   
+     a, li{
+        display: none;
+    }
     #marketing ,#receitas , #exercicio ,#alimentacao, #confeiteiro{
         display: list-item;
         text-align: center;
@@ -291,9 +293,7 @@ p, .preco-cortado{
         /*display list item serve para listar os itens que estão ocultos como na tag a baixo 
         display none nois ocultamos os botões no modo mobile e so funciona no modo pc*/
     }
-    a, li{
-        display: none;
-    }
+  
 }
 
 
