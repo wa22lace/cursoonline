@@ -286,7 +286,7 @@ p, .preco-cortado{
     #marketing ,#receitas , #exercicio ,#alimentacao, #confeiteiro{
         display: list-item;
         text-align: center;
-        padding: 1px;
+        padding: 1.8px;
         border-radius: 14px;
         /*display list item serve para listar os itens que estão ocultos como na tag a baixo 
         display none nois ocultamos os botões no modo mobile e so funciona no modo pc*/
