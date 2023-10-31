@@ -191,7 +191,7 @@ p, .preco-cortado{
 }
 
 
-#menu-produtos, #menu-produtos2, #menu-produtos-ultimo2{
+#menu-produtos, #menu-produtos2,  #menu-produtos-ultimo2{
     width:100%;
     height: 14rem;
     display: flex;
@@ -204,7 +204,7 @@ p, .preco-cortado{
     
 }
 @media(min-width:700px){
-    #menu-produtos, #menu-produtos2 ,#menu-produtos-ultimo2{
+    #menu-produtos, #menu-produtos2  ,#menu-produtos-ultimo2{
         max-width:75%;
         margin: auto;
     }
@@ -217,6 +217,15 @@ p, .preco-cortado{
     }
     #menu-produtos-ultimo::-webkit-scrollbar{
         display:none;
+    }
+    .produto11, .produto22, .produto33,  .produto44,  .produto55, .produto66, .produto77, .produto88, .produto99{
+        background-color:rgb(140, 133, 255);
+        margin-left: 1rem;
+        min-width:145px;
+        height:220px;
+        border-radius: 5px;
+        justify-content: space-around;
+        margin: 0 10px 10px;
     }
 
 }
@@ -234,8 +243,8 @@ p, .preco-cortado{
 
  /*
 #menu-produtos-ultimo div{
-    height:180px;
-    width:120px;
+    height:220px;
+    width:100%;
     margin-top: 10px;
 }
 */
@@ -257,15 +266,27 @@ p, .preco-cortado{
         flex-wrap:wrap;
         justify-content:space-around;
     }
-
+/*
     #menu-produtos-ultimo div{
         justify-content:space-around;
-        /*min-width:130px;*/
+        /*min-width:130px;
         width: 160px;
-        margin-top: 10px;
         margin: 0 10px 10px;
 
     }
+*/
+    .produto11, .produto22, .produto33,  .produto44,  .produto55, .produto66, .produto77, .produto88, .produto99{
+        background-color:rgb(140, 133, 255);
+        margin-left: 1rem;
+        width:145px;
+        height:220px;
+        border-radius: 5px;
+        justify-content: space-around;
+        margin: 0 10px 10px;
+    }
+        #produto9ultimo, .produto99{
+            display:none;
+        }
 
 
     .produto1, .produto2, .produto3,  .produto4,  .produto5, .produto6, .produto7, .produto8, .produto9{
@@ -275,6 +296,7 @@ p, .preco-cortado{
         height:220px;
         border-radius: 5px;
     }
+
     
 
     #botao-esquerda , #botao-direita{
@@ -309,11 +331,7 @@ p, .preco-cortado{
 }
 
 
-@media(max-width:527px){
-        #produto9ultimo{
-            display:none;
-        }
-}
+
 #menu-produtos-ultimo::-webkit-scrollbar{
     display:none;
 }
