@@ -21,15 +21,8 @@ h1 {
     margin-left: ;
 }
 img{
-    max-width: 100%;
-}
-li{
-    padding: 5px;
-    background: red;
-}
-a{
-    padding: 5px;
-    background: red;
+    width: 100%;
+    height: 100%;
 }
 
 .produtos{
@@ -62,7 +55,7 @@ a{
 }
 
 
-@media(max-width:540px){
+@media(max-width:580px){
     .produtos{
         grid-template-columns: 1fr; 
         width: 100%;
@@ -78,13 +71,14 @@ a{
     }
     
 }
-@media(min-width:540px){
+@media(min-width:580px){
     .produtos{
-        margin-left:5%;
+        margin: auto;
+        width: 100%;
     }
     .produtos div{
-        width: 250px;
-        margin-left: 5px;
+        width: 100%;
+        margin-left: 15px;
         
         }
 }
@@ -93,7 +87,7 @@ a{
         margin: auto;
     }
     .produtos div{
-        width: 270px;
+        width: 100%;
         margin:  auto  ;  
         margin-top: 10px;
 
@@ -102,7 +96,7 @@ a{
 @media(min-width:925px){
   
     .produtos div{
-        width: 300px;
+        max-width: 300px;
         }
 }
 
@@ -121,18 +115,35 @@ p{
     margin: 0; /*serve para tirar o espacamento de cima que ela dar por conta da div o item acaba descendo um pouco*/
     text-decoration: line-through;
     font-size: 12px;
+    color: black;
+}
+#btncompra{
+    font-size: 15px;
+    margin: 0;
+    width: 100%;
+    
+}
+#btncompra div {
+  margin: 0;
 }
 #price{
-    font-size: black;
-    width: 100%;
-    margin: 0;
+    color: white;
+    font-size: 25px;
+}
+#descricao{
+    color: black;
+    text-align: justify;
+    font-size: 15px;
+  
+}
+.a-vista{
+    font-size: 18px;
+    color: black;
 }
 
 #foto{
     margin: 0;  
+    min-width: 125px;
 }
-#btncompra{
-    height: 100%;
-    margin: 0;
-}
+
 
