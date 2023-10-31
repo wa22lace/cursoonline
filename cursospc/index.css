@@ -221,7 +221,7 @@ p, .preco-cortado{
     .produto11, .produto22, .produto33,  .produto44,  .produto55, .produto66, .produto77, .produto88, .produto99{
         background-color:rgb(140, 133, 255);
         margin-left: 1rem;
-        min-width:145px;
+        min-width:150px;
         height:220px;
         border-radius: 5px;
         justify-content: space-around;
