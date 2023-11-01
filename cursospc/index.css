@@ -40,6 +40,15 @@ input{
     .href-cursos{
         display: none;
         background-color: red;
+    }   
+    .foto-promocao{
+      /*  background-image: url(foto/fotomobile.png);
+        background-position: calc(100% - 15px)center;
+        background-repeat: no-repeat;
+        width: 100%;
+        display: flex;*/
+    }
+    .imagem-foto{
     }
 }
 .menu{
@@ -222,7 +231,6 @@ p, .preco-cortado{
         background-color:rgb(140, 133, 255);
         margin-left: 1rem;
         min-width:145px;
-        height:220px;
         border-radius: 5px;
         justify-content: space-around;
         margin: 0 10px 10px;
