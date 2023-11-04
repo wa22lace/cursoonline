@@ -26,6 +26,7 @@ input{
     min-width: 90%;
     padding: 8px;
     margin-top:10px;
+    display: none;
 }
 @media(min-width:500px){
     input{
@@ -33,7 +34,6 @@ input{
     background-color: rgb(178, 178, 168);
     flex-wrap: wrap;
     max-height: 40px;
-    display: none;
 
     }
 }
