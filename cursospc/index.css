@@ -33,6 +33,7 @@ input{
     background-color: rgb(178, 178, 168);
     flex-wrap: wrap;
     max-height: 40px;
+    display: none;
 
     }
 }
@@ -41,15 +42,16 @@ input{
         display: none;
         background-color: red;
     }   
-    .foto-promocao{
-      /*  background-image: url(foto/fotomobile.png);
+    /*   .foto-promocao{
+     background-image: url(foto/fotomobile.png);
         background-position: calc(100% - 15px)center;
         background-repeat: no-repeat;
         width: 100%;
-        display: flex;*/
+        display: flex;
     }
     .imagem-foto{
     }
+    */
 }
 .menu{
    /* width: 100%;
@@ -69,7 +71,7 @@ li, a{
     list-style: none;
     text-decoration: none;
     text-align: center;
-    background: #aabedb;
+    background: #aabedb; /*#d3d5d8;*/
     padding: 3px;
     border-radius: 10px;
     width: 80px;
@@ -198,8 +200,6 @@ p, .preco-cortado{
     
     }
 }
-
-
 #menu-produtos, #menu-produtos2,  #menu-produtos-ultimo2{
     width:100%;
     height: 16rem;
