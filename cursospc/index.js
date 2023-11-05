@@ -61,7 +61,7 @@ function produto1(){
     window.location = "https://go.hotmart.com/T87543077D"
 }
 function produto2(){
-    window.location = ""
+    window.location = "https://go.hotmart.com/G87240731C"
 }
 function produto3(){
     window.location = "https://go.hotmart.com/J87922623O"
@@ -167,11 +167,11 @@ function produto39(){
     window.location = "https://go.hotmart.com/X87950312P"
 }
 function mar1(){
-    window.location = ""
+    window.location = "https://go.hotmart.com/G87240731C"
 }
 
 function mar2(){
-    window.location = ""
+    window.location = "https://go.hotmart.com/G87253891Q"
 }
 
 function mar3(){
