@@ -358,6 +358,25 @@ function exe9(){
 function exe10(){
     window.location = "https://go.hotmart.com/L87962284J"
 }
+function marketing(){
+    window.location = "indexmarketing.html"
+}
+function receitas(){
+    window.location = "indexreceitas.html"
+}
+function exercicios(){
+    window.location = "indexexercicios.html"
+}
+function alimentaçao(){
+    window.location = "indexalimentação.html"
+}
+function confeitaria(){
+    window.location = "indexconfeitaria.html"
+}
+function logo(){
+    window.location = "index1.html"
+}
+
 
 
 

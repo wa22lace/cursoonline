@@ -11,8 +11,8 @@
 <body>
     
    <header class="header">
-        <div class="logo">
-            <img src="foto/logo-mobile.png" alt="logo">
+        <div onclick="logo()" class="logo">
+            <img  src="foto/logo-mobile.png" alt="logo">
         
         </div>
     
@@ -33,38 +33,30 @@
         </div>
 
         <div class="grade-itens">
-            <div class="marketing">
-                <li id="marketing">
-                    <a id="marketing" href="indexmarketing.html">Marketing</a>
-                </li>
+            <div class="marketing" onclick="marketing()">
+                Marketing
             </div>
-            <div class="receitas">
-                <li id="receitas">
-                    <a id="receitas" href="indexreceitas.html">Receitas</a>
-                </li>
+            <div class="receitas" onclick="receitas()">
+                Receitas
             </div>
-            <div class="exercícios">
-                <li id="exercicio">
-                    <a id="exercicio" href="indexexercicios.html">Exercícios</a>
-                </li> </div>
-            <div class="alimentacao">
-                <li id="alimentacao">
-                    <a id="alimentacao" href="indexalimentação.html">Alimentaçâo</a>
-                </li>
+            <div class="exercícios" onclick="exercicios()">
+                Exercícios
             </div>
-            <div class="confeiteiro">
-                <li id="confeiteiro">
-                    <a id="confeiteiro" href="indexconfeitaria.html">Confeiteiro</a>
-                </li>
+            <div class="alimentacao" onclick="alimentaçao()">
+                Alimentaçâo
+            </div>
+            <div class="confeitaria" onclick="confeitaria()">
+                Confeitaria
             </div>
         </div>
     
         <div class="texto1">
-            <h1 class="texto1">BLACK FRIDER </h1>
+            <h1 class="texto1">Preços Exclusivos </h1>
         </div>
 
        <div id="menu-produtos">
-        <div id="botao-esquerda" onclick="direcao(1)"> < </div>
+        <div id="botao-esquerda" onclick="direcao(1)"> 
+            <img class="voltaricon" src="foto/icons8-voltar-48.png" alt=""></div>
         <div class="produto1" onclick="produto1()">
             <img src="produto1/produto1.png" alt="foto-produto">
             <div class="descricao">
@@ -241,7 +233,9 @@
                 <a href="https://go.hotmart.com/M87957370C">Compra</a>
             </li>
         </div>
-        <div id="botao-direita" onclick="direcao(2)"> > </div>
+        <div id="botao-direita" onclick="direcao(2)"> 
+        <img class="avançaricon" src="foto/icons8-avançar-48.png" alt="avançar-icon">
+        </div>
        </div>
 
        <h1 class="texto1">
@@ -249,7 +243,8 @@
        </h1>
 
     <div id="menu-produtos2">
-        <div id="botao-esquerda" onclick="segundadirecao(1)"> < </div>
+        <div id="botao-esquerda" onclick="segundadirecao(1)"> 
+        <img class="voltaricon" src="foto/icons8-voltar-48.png" alt="voltar-icon"> </div>
         <div class="produto1" onclick="produto10()">
             <img src="receitas/produto3/produto3.png" alt="foto-produto">
             <div class="descricao">
@@ -423,7 +418,9 @@
                 <a href="https://go.hotmart.com/Y87914486P">Compra</a>
             </li>
         </div>
-        <div id="botao-direita" onclick="segundadirecao(2)"> > </div>
+        <div id="botao-direita" onclick="segundadirecao(2)"> 
+        <img class="avançaricon" src="foto/icons8-avançar-48.png" alt="avançar-icon">
+        </div>
        </div>
        
        <h1 class="texto1">
@@ -431,7 +428,9 @@
        </h1>
     
        <div id="menu-produtos-ultimo">
-        <div id="botao-esquerda" onclick="direcao1(1)"> < </div>
+        <div id="botao-esquerda" onclick="direcao1(1)"> 
+        <img class="voltaricon" src="foto/icons8-voltar-48.png" alt="voltar-icon">
+        </div>
         <div class="produto11" onclick="produto21()">
             <img src="marketing/produto5/produto5.png" alt="foto-produto">
             <div class="descricao">
@@ -599,15 +598,19 @@
                 <a href="https://go.hotmart.com/R87958557Q">Compra</a>
             </li>
         </div>
-        <div id="botao-direita" onclick="direcao1(2)"> > </div>
+        <div id="botao-direita" onclick="direcao1(2)">
+        <img class="avançaricon" src="foto/icons8-avançar-48.png" alt="avançar-icon">
+        </div>
        </div>
 
     <h1 class="texto1">
-        Black Week 
+        Estudo de Qualidade sò Aqui
     </h1>
 
        <div id="menu-produtos-ultimo2">
-        <div id="botao-esquerda" onclick="direcao3(1)"> < </div>
+        <div id="botao-esquerda" onclick="direcao3(1)"> 
+        <img class="voltaricon" src="foto/icons8-voltar-48.png" alt="voltar-icon">
+        </div>
         <div class="produto1" onclick="produto31()">
             <img src="exercicios/produto7/produto7.png" alt="foto-produto">
             <div class="descricao">
@@ -687,7 +690,7 @@
         <div class="produto5" onclick="produto35()">
             <img src="receitas/produto7/produto7.png" alt="foto-produto">
             <div class="descricao">
-                RECEITANDO
+                Receitando
             </div>
             <div class="price">
                 <p class="preco-cortado">
@@ -706,7 +709,7 @@
         <div class="produto6" onclick="produto36()">
             <img src="marketing/produto8/produto8.png" alt="foto-produto">
             <div class="descricao">
-                Marketing na Internet - Os Segredos do Marketing...
+                Marketing na Internet - Os Segredos
             </div>
             <div class="price">
                 <p class="preco-cortado">
@@ -778,11 +781,13 @@
                 <a href="https://go.hotmart.com/X87950312P">Compra</a>
             </li>
         </div>
-        <div id="botao-direita" onclick="direcao3(2)"> > </div>
+        <div id="botao-direita" onclick="direcao3(2)"> 
+        <img class="avançaricon" src="foto/icons8-avançar-48.png" alt="avançar-icon">
+        </div>
         </div>
    
     <footer> 
-        Contatos:
+        Contatos: <img id="seta" src="foto/sinal-de-seta-para-baixo-para-navegar.png" alt="foto-para-baixo">
         <br>
         (99) 98526-5037
         <br>
